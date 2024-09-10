@@ -6,35 +6,20 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
+    title: "Home",
+    path: "/",
   },
   {
-    title: "Pricing",
-    path: "/pricing",
+    title: "Services",
+    path: "/Services",
   },
   {
     title: "About",
     path: "/about",
   },
   {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
     title: "Contact",
     path: "/contact",
-  },
-  {
-    title: "Pro Version",
-    badge: true,
-    path: "https://astroship-pro.web3templates.com/",
   },
 ];
 ---
@@ -82,17 +67,13 @@ const menuitems = [
               </>
             ))
           }
-        </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
-        </div>
+        </ul>       
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
         <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <Link href="/schedule" size="md" block>Schedule an Appointment</Link>
       </div>
     </div>
   </header>
